@@ -289,6 +289,16 @@ section {
   }
 }
 
+@media (max-width: 425px) {
+  .gallery {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+
+
+
 /* Pricing */
 .pricing {
   display: grid;
@@ -447,4 +457,17 @@ footer {
 
 .hidden {
   display: none;
+}
+
+
+@media (max-width: 750px) {
+  .pricing {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .pricing {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
