@@ -6,18 +6,36 @@
   <title>Love Custom — студия кастомизации</title>
   <meta name="description" content="Love Custom — студия кастомной росписи одежды и аксессуаров: уход, на чём рисуем, примеры работ, цены и обратная связь."/>
   <link rel="stylesheet" href="./style.css">
-  <link rel="icon" href="./material/123.png" sizes="64x64">
+  <link rel="icon" href="./material/logo.jpg" sizes="64x64">
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <script src="./script.js" defer></script>
 </head>
+
 <body>
+  <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Галерея">
+  <div class="lb-frame">
+    <div class="lb-top">
+      <div class="lb-info" id="lbInfo">—</div>
+      <button class="lb-close" id="lbClose" aria-label="Закрыть">✕</button>
+    </div>
+
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Предыдущее">❮</button>
+    <img class="lb-slide" id="lbSlide" alt="">
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Следующее">❯</button>
+
+    <div class="lb-thumbs" id="lbThumbs"></div>
+  </div>
+</div>
+
   <!-- HEADER / NAV -->
   <header>
     <div class="container nav">
       <a class="brand" href="#top">
         <!-- <span class="logo" aria-hidden="true"> -->
-          <!-- <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 21s-6.716-3.776-9.193-7.253C.205 10.893 2.322 6 6.833 6c2.176 0 3.58 1.21 4.376 2.43C12.586 7.21 13.99 6 16.166 6c4.51 0 6.628 4.893 3.026 7.747C18.716 17.224 12 21 12 21Z"/></svg> -->
+          <!-- <svg ...> ... </svg> -->
+          <!-- <img src="./material/logo.jpg" alt="Логотип Love Custom" width="42" height="42"> -->
+
         </span>
         <b>Love Custom</b>
       </a>
@@ -34,9 +52,6 @@
   </header>
    
 
-
-
-
   
   <!-- HERO -->
   <div class="container hero" id="top">
@@ -45,8 +60,8 @@
         <h1>Студия кастомизации одежды и аксессуаров</h1>
         <p>Ручная роспись, индивидуальные эскизы и бережные технологии.</p>
         <div class="cta">
-          <a href="#examples" class="btn primary">Смотреть примеры</a>
-          <a href="#contact" class="btn">Заказать кастом</a>
+          <!-- <a href="#examples" class="btn primary">Смотреть примеры</a> -->
+          <a href="https://t.me/love_custom" target="_blank" class="btn">Заказать кастом</a>
         </div>
         <div class="chipbar" aria-hidden="true">
           <span class="chip">Худи</span>
@@ -61,8 +76,8 @@
         <ul style="margin:8px 0 0;padding-left:18px">
           <li>Стойкие текстильные краски, термофиксация</li>
           <li>Эскиз/правки перед росписью</li>
-          <!-- <li>Отправка по Израилю и миру</li> -->
-          <li>Сроки от 3–7 дней в зависимости от сложности</li>
+          <li>Доставка по всей России</li>
+          <li>Сроки от 3-7 дней в зависимости от сложности</li>
         </ul>
       </div>
     </div>
@@ -73,14 +88,132 @@
     <div class="container">
       <div class="section-title"><h2>Примеры работ</h2><div class="line"></div></div>
       <div class="gallery">
-        <!-- Замените src на ваши изображения -->
-        <div class="ph"><img src="./material/img3.jpg" alt="Пример росписи на джинсовке"></div>
-        <div class="ph"><img src="./material/img1.jpg" alt="Пример росписи на футболке"></div>
-        <div class="ph"><img src="./material/img2.jpg" alt="Пример росписи на джинсовке"></div>
-        <div class="ph"><img src="./material/img4.jpg" alt="Пример росписи на джинсовке"></div>
-        <div class="ph"><img src="./material/img5.jpg" alt="Пример росписи на чайнике"></div>
-        <div class="ph"><img src="./material/img6.jpg" alt="Пример росписи на футболке"></div>
-      </div>
+  <!-- Альбом: denim-fox -->
+  <!-- Альбом: denim-fox -->
+
+<div class="ph" tabindex="0"
+     data-album="jinx"
+     data-full="./material/jinx/j1.jpg"
+     data-caption="ДНД"
+     data-images='[
+       "./material/jinx/j1.jpg",
+       "./material/jinx/j2.jpg",
+       "./material/jinx/j3.jpg"
+     ]'>
+  <img src="./material/jinx/j1.jpg" alt="Череп — превью 1">
+</div>
+
+
+
+<div class="ph" tabindex="0"
+     data-album="Джинсовка"
+     data-full="./material/img3.jpg"
+     data-caption="Светится в темноте"
+     data-images='[
+       "./material/img3.jpg",
+       "./material/img7.jpg"
+     ]'>
+  <img src="./material/img3.jpg" alt="Лиса — превью 1">
+</div>
+
+<!-- Альбом: tee-skull -->
+<div class="ph" tabindex="0"
+     data-album="Дресс код"
+     data-full="./material/img1.jpg"
+     data-caption="Дресс код"
+     data-images='[
+       "./material/img1.jpg",
+       "./material/img9.jpg",
+       "./material/img10.jpg"
+     ]'>
+  <img src="./material/img1.jpg" alt="Череп — превью 1">
+</div>
+
+
+
+<div class="ph" tabindex="0"
+     data-album="cat"
+     data-full="./material/Cat/c3.jpg"
+     data-caption="cat"
+     data-images='[
+       "./material/Cat/c3.jpg",
+       "./material/Cat/c1.jpg",
+       "./material/Cat/c2.jpg"
+     ]'>
+  <img src="./material/Cat/c3.jpg" alt="Череп — превью 1">
+</div>
+
+
+<!-- Альбом: kettle-art -->
+<div class="ph" tabindex="0"
+     data-album="Осень"
+     data-full="./material/img5.jpg"
+     data-caption="Роспись чайника"
+     data-images='[
+       "./material/img5.jpg",
+       "./material/img11.jpg",
+       "./material/img12.jpg"
+     ]'>
+  <img src="./material/img5.jpg" alt="Роспись чайника">
+</div>
+
+<!-- Альбом: tee-skull -->
+<div class="ph" tabindex="0"
+     data-album="Аниме"
+     data-full="./material/img2.jpg"
+     data-caption="Аниме"
+     data-images='[
+       "./material/img2.jpg",
+       "./material/img14.jpg"
+     ]'>
+  <img src="./material/img2.jpg" alt="Череп — превью 1">
+</div>
+
+<!-- Альбом: tee-skull -->
+<div class="ph" tabindex="0"
+     data-album="Рыбы"
+     data-full="./material/img4.jpg"
+     data-caption="Рыбы"
+     data-images='[
+       "./material/img4.jpg",
+       "./material/img13.jpg"
+     ]'>
+  <img src="./material/img4.jpg" alt="Череп — превью 1">
+</div>
+
+<!-- Альбом: tee-skull -->
+<div class="ph" tabindex="0"
+     data-album="ДНД"
+     data-full="./material/img6.jpg"
+     data-caption="ДНД"
+     data-images='[
+       "./material/img6.jpg",
+       "./material/img15.jpg"
+     ]'>
+  <img src="./material/img6.jpg" alt="Череп — превью 1">
+</div>
+
+
+
+
+<div class="ph" tabindex="0"
+     data-album="text"
+     data-full="./material/text/t1.jpg"
+     data-caption="text"
+     data-images='[
+       "./material/text/t1.jpg",
+       "./material/text/t2.jpg",
+       "./material/text/t3.jpg",
+       "./material/text/t4.jpg"
+     ]'>
+  <img src="./material/text/t1.jpg" alt="Череп — превью 1">
+</div>
+
+
+
+
+</div>
+<p class="line"><h2><a target="_blank" href="https://t.me/love_custom">БОЛЬШЕ ПРИМЕРОВ КАСТОМИЗАЦИИ</a></h2><br/></p>
     </div>
   </section>
 
@@ -90,11 +223,11 @@
       <div class="section-title"><h2>На чём рисую</h2><div class="line"></div></div>
       <div class="grid g3">
         <div class="card"><h3>Худи и свитшоты</h3><p class="muted">100% хлопок или смесовые ткани с плотным плетением. Предпочтительно светлые и средние тона.</p></div>
-        <div class="card"><h3>Футболки</h3><p class="muted">Хлопок 180–220 г/м². Возможна роспись на oversize силуэтах и кроп‑топах.</p></div>
+        <div class="card"><h3>Футболки</h3><p class="muted">Хлопок 180-220 г/м². Возможна роспись на oversize силуэтах и кроп-топах.</p></div>
         <div class="card"><h3>Джинсовки</h3><p class="muted">Классический деним средней плотности. Эффектная фактура под роспись и лакировку.</p></div>
-        <div class="card"><h3>Кеды/кроссовки</h3><p class="muted">Кожа/эко‑кожа/текстиль. Используем грунт, ангидус, финиш.</p></div>
+        <div class="card"><h3>Кеды/кроссовки</h3><p class="muted">Кожа/эко-кожа/текстиль. Используем грунт, ангидус, финиш.</p></div>
         <div class="card"><h3>Сумки/рюкзаки</h3><p class="muted">Хлопок, канвас, кожа. Трафареты для аккуратной геометрии.</p></div>
-        <div class="card"><h3>Другое</h3><p class="muted">Бейсболки, кошельки, чехлы, чехлы для ноутбука — по запросу.</p></div>
+        <div class="card"><h3>Другое</h3><p class="muted">Бейсболки, кошельки, чехлы, чехлы для ноутбука - по запросу.</p></div>
       </div>
     </div>
   </section>
@@ -109,8 +242,8 @@
           <div class="num">от 2000 рублей</div>
           <ul>
             <li>Небольшой рисунок (грудь/рукав)</li>
-            <li>1–2 цвета, без сложной детализации</li>
-            <li>Срок: 2–3 дня</li>
+            <li>1-2 цвета, без сложной детализации</li>
+            <li>Срок: 2-3 дня</li>
           </ul>
         </div>
         <div class="price" style="border:2px solid var(--brand);">
@@ -118,8 +251,8 @@
           <div class="num">от 4000 рублей</div>
           <ul>
             <li>Средний формат (спина/полочка)</li>
-            <li>Градиенты, 3–6 цветов</li>
-            <li>Срок: 3–7 дней</li>
+            <li>Градиенты, 3-6 цветов</li>
+            <li>Срок: 3-7 дней</li>
           </ul>
         </div>
         <div class="price">
@@ -146,7 +279,7 @@
           </div>
           <div>
             <b>Сроки</b>
-            <p class="muted">Срочные заказы +20–40%. Плановые — по базовому прайсу.</p>
+            <p class="muted">Срочные заказы +20-40%. Плановые - по базовому прайсу.</p>
           </div>
         </div>
         <div class="muted" style="margin-top:8px">* Вещь можно предоставить свою или заказать через нас (стоимость вещи отдельно).</div>
@@ -161,7 +294,7 @@
       <div class="card">
         <div class="list">
           <div class="item"><span class="dot"></span><div><b>Стирка:</b> 30°С, деликатный режим, вывернуть наизнанку, без отбеливателей.</div></div>
-          <div class="item"><span class="dot"></span><div><b>Сушка:</b> естественная, без прямого солнца. Сушильную машину — избегать.</div></div>
+          <div class="item"><span class="dot"></span><div><b>Сушка:</b> естественная, без прямого солнца. Сушильную машину - избегать.</div></div>
           <div class="item"><span class="dot"></span><div><b>Глажка:</b> через ткань/с изнанки, режим для хлопка/денима.</div></div>
           <div class="item"><span class="dot"></span><div><b>Химчистка:</b> не рекомендуется для ручной росписи.</div></div>
           <div class="item"><span class="dot"></span><div><b>Хранение:</b> на плечиках или аккуратно сложить; избегать трения рисунка о грубые поверхности.</div></div>
@@ -177,7 +310,7 @@
       <div class="reviews">
         <div class="review">
           <div class="stars">★★★★★</div>
-          <p>Заказывала джинсовку с рыбами — получилось бомбически! Цвета живые, всё аккуратно.</p>
+          <p>Заказывала джинсовку с рыбами - получилось бомбически! Цвета живые, всё аккуратно.</p>
           <div class="who">Марина, Москва</div>
         </div>
         <div class="review">
@@ -187,7 +320,7 @@
         </div>
         <div class="review">
           <div class="stars">★★★★★</div>
-          <p>Кеды с персонажем игры — ношу месяц, краска держится. Буду заказывать ещё.</p>
+          <p>Кеды с персонажем игры - ношу месяц, краска держится. Буду заказывать ещё.</p>
           <div class="who">Егор, Москва</div>
         </div>
       </div>
@@ -223,10 +356,6 @@
         <div class="card">
           <h3 style="margin-top:0">Соцсети и контакты</h3>
           <div class="socials" style="margin-bottom:10px">
-            <!-- <a href="#" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-              Instagram
-            </a> -->
             <!-- <a href="#" aria-label="TikTok">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 3c.5 2.2 2.1 4 4.3 4.7v3.1c-1.6-.1-3.1-.6-4.3-1.5V15a5.5 5.5 0 1 1-4.7-5.4v3.2a2.2 2.2 0 1 0 1.5 2.1V3h3.2z"/></svg>
               TikTok
@@ -235,17 +364,30 @@
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 7s-.2-1.5-.8-2.2c-.7-.8-1.5-.8-1.9-.9C17.3 3.5 12 3.5 12 3.5h0s-5.3 0-8.3.4c-.4.1-1.2.1-1.9.9C1.2 5.5 1 7 1 7S.8 8.7.8 10.4v1.2C.8 13.3 1 15 1 15s.2 1.5.8 2.2c.7.8 1.6.8 2 1 1.5.1 6.2.4 8.2.4s6.8-.1 8.3-.4c.4-.1 1.2-.1 1.9-.9.6-.7.8-2.2.8-2.2s.2-1.7.2-3.4v-1.2C23.2 8.7 23 7 23 7ZM9.8 13.6V7.9l6 2.9-6 2.8Z"/></svg>
               YouTube
             </a> -->
-            <a href="#" aria-label="Telegram">
+            <!-- <a href="#" aria-label="Telegram">
               <svg viewBox="0 0 24 24" fill="currentColor"><path d="M9.04 15.04 8.7 19.8c.56 0 .8-.24 1.1-.52l2.64-2.52 5.48 4.02c1 .56 1.7.28 2-.92l3.64-17.06h0c.32-1.52-.56-2.12-1.52-1.76L1.4 9.08C-.08 9.68-.06 10.54 1.14 10.9l5.48 1.7L19.2 5.54c.76-.48 1.44-.22.88.26L9.04 15.04Z"/></svg>
               Telegram
-            </a>
+            </a> -->
           </div>
+          <p class="muted">Телега: <a target="_blank" href="https://t.me/love_custom">love_custom</a><br/></p>
           <p class="muted">Почта: <a href="mailto:beketova4545@gmail.com">beketova4545@gmail.com</a><br/></p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- About (встроенная страница, открывается по клику на бренд) -->
+  <section id="about" class="hidden" role="region" aria-label="О студии">
+    <div class="container">
+      <div class="section-title"><h2>Давайте знакомиться!</h2><div class="line"></div></div>
+      <div class="card">
+        <h3 style="margin-top:0"><b></b></h3>
+        <p class="muted">Я - художник-основатель студии Love Custom. Рисую вручную на текстиле, делаю эскизы и закрепляю краску термофиксацией. Работаю с худи, футболками, джинсовками, кедами и сумками. Принимаю заказы по телеграму и почте.</p>
+        <p class="muted">Контакты: <a href="https://t.me/love_custom" target="_blank">t.me/love_custom</a> · <a href="mailto:beketova4545@gmail.com">beketova4545@gmail.com</a></p>
+      </div>
+    </div>
+  </section>
+  
   <footer>
     <div class="container" style="display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap">
       <small class="muted">© <span id="y"></span> Love Custom. Все права защищены.</small>
